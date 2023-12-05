@@ -13,6 +13,21 @@ class HomeFragment : Fragment() {
     ): View? {
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        var exampleList = listOf<infomembers>(
+            infomembers("Aditya Kumar", 8955163181),
+            infomembers("Rounak Vats", 8655143210),
+            infomembers("Rohit Raj", 8655143210),
+            infomembers("Rakesh Gautam", 8655143210),
+        )
+        val homeAdapter1 = memberadapter(exampleList)
+
+
+
+
+    }
     companion object {
         @JvmStatic
         fun newInstance() =

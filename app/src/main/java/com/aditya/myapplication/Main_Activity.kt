@@ -23,15 +23,9 @@ class Main_Activity : AppCompatActivity() {
            else if(it.itemId==R.id.userItem){
                inflateFragment(UserFragment.newInstance())
            }
-            else{
-                inflateFragment(HomeFragment.newInstance())
-           }
-
-
             true
         }
-
-
+        bottomBar.selectedItemId = R.id.homeItem
     }
 
     private fun inflateFragment(newInstance : Fragment) {
@@ -39,5 +33,4 @@ class Main_Activity : AppCompatActivity() {
         a.replace(R.id.container,newInstance)
         a.commit()
     }
-
     }
