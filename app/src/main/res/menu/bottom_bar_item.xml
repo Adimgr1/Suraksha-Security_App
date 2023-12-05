@@ -3,18 +3,22 @@
     <item
         android:title="Home"
         android:icon="@drawable/home_icon"
+        android:id="@+id/homeItem"
         />
     <item
         android:title="Dashboard"
         android:icon="@drawable/dashboard_icon"
+        android:id="@+id/dashboardItem"
         />
     <item
         android:title="Gaurd"
         android:icon="@drawable/gaurd_icon"
+        android:id="@+id/gaurdButton"
         />
     <item
         android:title="User"
-        android:icon="@drawable/user_icon"/>
+        android:icon="@drawable/user_icon"
+        android:id="@+id/userItem"/>
 
 
 </menu>
