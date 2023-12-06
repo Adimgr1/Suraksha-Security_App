@@ -33,6 +33,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/bottomBar"/>
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerOne"
         app:layout_constraintTop_toBottomOf="@id/header"
         app:layout_constraintBottom_toTopOf="@id/bottomBar"
         android:layout_width="match_parent"
